@@ -3,11 +3,11 @@ function isEnoughCapacity(products, containerSize) {
   let sum = 0;
   for (const product of getArray) {
     sum += product;
-    if (sum <= containerSize) {
-      return true;
+    if (sum > containerSize) {
+      return false;
     }
   }
-  return false;
+  return true;
 }
 
 console.log(
